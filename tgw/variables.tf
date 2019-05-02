@@ -25,6 +25,7 @@ variable "default_route_table_propagation" {
 variable "tgw_description" {
   description = "Description of the EC2 Transit Gateway."
   type        = "string"
+  default = "none"
 }
 
 variable "dns_support" {
@@ -36,6 +37,9 @@ variable "dns_support" {
 variable "tags" {
   description = "Key-value tags for the EC2 Transit Gateway."
   type        = "map"
+  default = {
+    test = "yes"
+  }
 }
 
 variable "vpn_ecmp_support" {
@@ -47,4 +51,7 @@ variable "vpn_ecmp_support" {
 variable "local_tags" {
   description = "Local tags to override the globals for the VPC"
   type        = "map"
+  default = {
+    test-local = "yes"
+  }
 }
