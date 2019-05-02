@@ -27,7 +27,7 @@ variable "tgw_description" {
   type        = "string"
 }
 
-variable "tgw_dns_support" {
+variable "dns_support" {
   description = "Whether DNS support is enabled."
   type        = "string"
   default     = "enable"
