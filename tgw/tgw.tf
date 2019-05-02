@@ -1,5 +1,5 @@
 data "aws_caller_identity" "current" {
-    description = "Current account ID"
+  
 }
 
 resource "aws_ec2_transit_gateway" "this" {

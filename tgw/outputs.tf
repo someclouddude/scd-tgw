@@ -10,7 +10,7 @@ output "tgw_id" {
 
 output "tgw_owner_id" {
     description = "Identifier of the AWS account that owns the EC2 Transit Gateway"
-    value = "${data.aws_caller_identity.current.id}"
+    value = "${data.aws_caller_identity.current.account_id}"
 }
 
 output "tgw_asn" {
