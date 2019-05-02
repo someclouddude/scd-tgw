@@ -3,9 +3,16 @@ variable "tgw_id" {
 }
 
 variable "tags" {
+  type = "map"
+  default = {
+    test = "yes"
+  }
   
 }
 
 variable "local_tags" {
-  
+  type = "map"
+  default = {
+    test_local = "yes"
+  }
 }
