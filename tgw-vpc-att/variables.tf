@@ -3,7 +3,7 @@ variable "subnet_ids" {
   type        = "list"
 }
 
-variable "tgw_id" {
+variable "transit_gateway_id" {
   description = "Identifier of EC2 Transit Gateway"
   type        = "string"
 }
