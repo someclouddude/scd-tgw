@@ -40,12 +40,12 @@ variable "local_tags" {
 
 variable "default_rt_assoc" {
   description = "Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table"
-  type        = "bool"
+  type        = "string"
   default     = false
 }
 
 variable "default_rt_prop" {
   description = "Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table"
-  type        = "bool"
+  type        = "string"
   default     = false
 }
