@@ -7,7 +7,9 @@ resource "random_integer" "aws_asn" {
     max = 65534
 }
 
+locals {
 amazon_side_asn = "${coalesce(var.amazon_side_asn, random_integer.aws_asn.result)}"
+}
 
 resource "aws_ec2_transit_gateway" "this" {
   amazon_side_asn                 = "${var.amazon_side_asn}"
