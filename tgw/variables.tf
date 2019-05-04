@@ -22,7 +22,7 @@ variable "default_route_table_propagation" {
   default     = "disable"
 }
 
-variable "tgw_description" {
+variable "description" {
   description = "Description of the EC2 Transit Gateway."
   type        = "string"
   default = "none"
