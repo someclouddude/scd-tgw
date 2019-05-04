@@ -1,7 +1,6 @@
 variable "amazon_side_asn" {
   description = "Private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is 64512 to 65534 for 16-bit ASNs and 4200000000 to 4294967294 for 32-bit ASNs. AWS Default value: 64512."
   type        = "string"
-  default     = 64575
 }
 
 variable "auto_accept_shared_attachments" {
