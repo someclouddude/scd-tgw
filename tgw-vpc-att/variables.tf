@@ -28,6 +28,9 @@ variable "ipv6_support" {
 variable "tags" {
   description = "Key-value tags"
   type        = "map"
+  default = {
+    default = "yes"
+  }
 }
 
 variable "local_tags" {
