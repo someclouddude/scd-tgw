@@ -8,11 +8,11 @@ resource "random_integer" "aws_asn" {
 }
 
 locals {
-amazon_side_asn = "${coalesce(var.amazon_side_asn, random_integer.aws_asn.result)}"
+  amazon_side_asn = "${coalesce(var.amazon_side_asn, random_integer.aws_asn.result)}"
 }
 
 resource "aws_ec2_transit_gateway" "this" {
-  amazon_side_asn                 = "${var.amazon_side_asn}"
+  amazon_side_asn                 = "${local.amazon_side_asn}"
   auto_accept_shared_attachments  = "${var.auto_accept_shared_attachments}"
   default_route_table_association = "${var.default_route_table_association}"
   default_route_table_propagation = "${var.default_route_table_propagation}"
