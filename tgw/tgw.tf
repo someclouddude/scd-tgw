@@ -2,7 +2,7 @@ data "aws_caller_identity" "current" {
 }
 
 resource "random_integer" "aws_asn" {
-    count = "${var.amazon_side_asn = "" ? 1 : 0}"
+    count = "${var.amazon_side_asn == "" ? 1 : 0}"
     min = 64512
     max = 65534
 }
