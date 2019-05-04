@@ -33,6 +33,9 @@ variable "tags" {
 variable "local_tags" {
   description = "Key-value tags default overrides"
   type        = "map"
+  default = {
+    local = "yes"
+  }
 }
 
 variable "default_rt_assoc" {
