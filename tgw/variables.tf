@@ -48,5 +48,4 @@ variable "vpn_ecmp_support" {
 variable "local_tags" {
   description = "Local tags to override the globals for the VPC"
   type        = "map"
-  default = {}
 }

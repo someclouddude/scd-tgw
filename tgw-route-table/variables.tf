@@ -4,10 +4,8 @@ variable "tgw_id" {
 
 variable "tags" {
   type = "map"
-  default = {}  
 }
 
 variable "local_tags" {
   type = "map"
-  default = {}
 }
