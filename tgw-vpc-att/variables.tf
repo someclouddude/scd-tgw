@@ -28,17 +28,13 @@ variable "ipv6_support" {
 variable "tags" {
   description = "Key-value tags"
   type        = "map"
-  default = {
-    default = "yes"
-  }
+  default = {}
 }
 
 variable "local_tags" {
   description = "Key-value tags default overrides"
   type        = "map"
-  default = {
-    local = "yes"
-  }
+  default = {}
 }
 
 variable "default_rt_assoc" {
