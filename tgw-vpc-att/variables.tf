@@ -30,11 +30,6 @@ variable "tags" {
   type        = "map"
 }
 
-variable "local_tags" {
-  description = "Key-value tags default overrides"
-  type        = "map"
-}
-
 variable "default_rt_assoc" {
   description = "Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table"
   type        = "string"

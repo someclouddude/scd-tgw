@@ -17,6 +17,6 @@ resource "aws_ec2_transit_gateway" "this" {
   default_route_table_propagation = "${var.default_route_table_propagation}"
   description                     = "${var.description}"
   dns_support                     = "${var.dns_support}"
-  tags                            = "${merge(var.tags, var.local_tags)}"
+  tags                            = "${var.tags}"
   vpn_ecmp_support                = "${var.vpn_ecmp_support}"
 }
