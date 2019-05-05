@@ -37,7 +37,6 @@ variable "dns_support" {
 variable "tags" {
   description = "Key-value tags for the EC2 Transit Gateway."
   type        = "map"
-  default = {}
 }
 
 variable "vpn_ecmp_support" {
